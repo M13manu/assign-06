@@ -19,7 +19,7 @@ def total_monthly_expense(whatsapp_msgs):
     """
     total_expense = 0
     # Write your implementation here
-
+    total_expense = sum(map(int, re.findall('\d+', str1)))
     return total_expense
 
 class Total_monthly_expense(unittest.TestCase):
